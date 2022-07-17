@@ -1,0 +1,95 @@
+html, body {
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+
+.float.left {
+        float: left;
+        
+}
+
+.float.right {
+        float: right;
+}
+
+div.container {
+        max-width: 1200px;
+        padding: 0 30px;
+        margin: 0 auto;
+        
+        box-sizing: border-box;
+}
+
+div.block {
+        
+        height: 300px;
+        width: 100%;
+        display: block;
+}
+
+footer {
+        display: block;
+        width: 1300px;
+      
+}
+
+footer div.copyright {
+        display: block;
+        width: 1300px;
+        background-color: #000000;
+        padding: 20px 0;
+        
+}
+
+footer div.copyright div.text {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 6px;
+        
+}
+
+footer div.copyright ul.links {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+       
+}
+
+footer div.copyright li {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        list-style-type: none;
+}
+
+footer div.copyright li a {
+        color: #ffffff;
+        font-size: 24px;
+        margin-left: 10px;
+}
+
+@media all and (max-width:1300px){
+        .float.left, .float.right {
+                float: left;
+                width: 1300px;
+                display: block;
+                text-align: center;
+                
+                
+        }
+        footer div.copyright li a {
+                margin-left: 0px;
+                margin: 0 5px;
+        }
+}
